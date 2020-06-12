@@ -12,12 +12,12 @@ public class ChaseUpcustomer
     	public ChaseUpcustomer(){}
     	public ChaseUpcustomer(String name,String address,long cellNo,String email,ArrayList<ChaseUpVehicalCar> cstmrCar,ArrayList<ChaseUpVehicalBike> cstmrBike)
     	{	
-    	    	this.name = name;
-    	    	this.address=address;
-    	    	this.cellNo=cellNo;
-    	    	this.email=email;
-		this.cstmrCar=cstmrCar;
-		this.cstmrBike=cstmrBike;
+			this.name = name;
+			this.address=address;
+			this.cellNo=cellNo;
+			this.email=email;
+			this.cstmrCar=cstmrCar;
+			this.cstmrBike=cstmrBike;
     	}
 	
     	public String getName()
@@ -78,22 +78,19 @@ public class ChaseUpcustomer
 		this.cstmrBike=cstmrBike;
 	}
 
-    	public String car()
-    	{
-    	    	return "Customer Name is "+name+"\nCustomer address is "+address+"\nCustomer cell number is "+cellNo+"\nCustomer email is "+email+"\n"+cstmrCar;
-    	}
-
-    	public String bike()
-    	{
-    	    	return "Customer Name is "+name+"\nCustomer address is "+address+"\nCustomer cell number is "+cellNo+"\nCustomer email is "+email+"\n"+cstmrBike;
-    	}
-
-	
-    	public String toString()
+	public String car()
 	{
-    		return "\n\nCustomer name is "+name+"\nCustomer cell no is "+cellNo+"\nCustomer address is "+address+"\nCustomer email address is "+email;
-    	}
+		return toString()+"\n Customer car number is "+cstmrCar;
+	}
+
+	public String bike()
+	{
+			return toString()+"\n Customer bike number is "+cstmrBike;
+	}
 
 
-	
+	public String toString()
+	{
+		return "\n\nCustomer name is "+name+"\nCustomer cell no is "+cellNo+"\nCustomer address is "+address+"\nCustomer email address is "+email;
+	}	
 }
