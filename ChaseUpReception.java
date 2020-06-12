@@ -1,4 +1,3 @@
-import java.util.*;
 public class ChaseUpReception
 {
 	private int customerId;
@@ -38,9 +37,7 @@ public class ChaseUpReception
 		System.out.println("Leave your counter before count your change");
 		System.out.println("Operator: Chander Kumar.");
 		System.out.println("\n\nSoftware developed by The Rocking Programmers.");
-		System.out.println("ph:+923403215000");
-		System.out.println("email: cqrajput@gmail.com");
+		System.out.println("ph:+923180280128");
+		System.out.println("email: chanderrajput021@gmail.com");
 	}
-    
-
 }
