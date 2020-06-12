@@ -18,21 +18,26 @@ public class ChaseUpPayment
 	{
 		this.cash=cash;
 	}
+	private static Scanner scan;
 
 	public void paymentOption()
 	{
-		Scanner scan=new Scanner(System.in);
+		scan = new Scanner(System.in);
 		System.out.println("\nHow do you want to pay your bill");
 		System.out.println("\nSelect from the options");
 		System.out.println("1. Cash\n2. ATM Card");
-		int pType=scan.nextInt();
+		int pType=0;
 		
-		if(pType!=1 && pType!=2)
-		{
-			System.out.println("Please select the correct option.");
-			System.out.println("\nSelect from the options");
-			System.out.println("1. Cash\n2. ATM Card");
-			pType=scan.nextInt();	
+		boolean condition=true;
+
+		while(condition==true){
+			pType=scan.nextInt();
+			if(pType==1 && pType==2)
+			{
+				condition=false;
+			}else{
+				System.out.println("Please select the correct option.\n");
+			}
 		}
 		
 		if(pType==1)
@@ -94,7 +99,7 @@ public class ChaseUpPayment
 			System.out.println("\nPlease give your ATM card");
 			System.out.println("Enter ATM's Pin");
 
-			int pin=scan.nextInt();
+			scan.nextInt();
 
 			System.out.println("\nEnter the price to withdraw the bill payment from the ATM\n");
 
