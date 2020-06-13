@@ -62,6 +62,7 @@ public class ChaseUpFood extends ChaseUpArea
 				if(quantity[i]!=0)
 						System.out.println("You select "+quantity[i]+(" ")+itemType[selectItem [i]]+"      "+(itemPrice[selectItem [i]]*quantity[i])+" Rs.");
 				}
+				condition=false;
 			}
 			else
 			{ 
