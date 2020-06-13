@@ -32,7 +32,7 @@ public class ChaseUpPayment
 
 		while(condition==true){
 			pType=scan.nextInt();
-			if(pType==1 && pType==2)
+			if(pType==1 || pType==2)
 			{
 				condition=false;
 			}else{
