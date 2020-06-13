@@ -49,7 +49,7 @@ public class ChaseUpTest
 
 		while(conditoin){
 			type = scan.nextInt();
-			if(type==1 && type==2){
+			if(type==1 || type==2){
 				conditoin=false;
 			}else{
 				System.out.println("Please select the correct input.\n");
@@ -102,7 +102,7 @@ public class ChaseUpTest
 		int area=0;
 		while(!conditoin){
 			area=scan.nextInt();
-			if(area==1 && area==2){
+			if(area==1 || area==2){
 				conditoin=true;
 			}else{
 				System.out.println("Please select the correct input.\n");
